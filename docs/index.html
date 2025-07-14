@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jonathan Xavier Bastidas Chisag | IT Engineer</title>
@@ -25,12 +24,11 @@
     header h1 {
       margin: 0;
       color: #38bdf8;
-      font-size: 2rem;
+      font-size: 2.2rem;
       animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid #38bdf8;
-      width: 100%;
       max-width: 100%;
     }
 
@@ -127,6 +125,46 @@
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 1024px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 15px;
+      }
+
+      header {
+        padding: 1.5rem 1rem;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        white-space: normal;
+        border-right: none;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      section {
+        padding: 0 1rem;
+      }
+
+      .tech-grid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .tech-grid span {
+        width: fit-content;
+      }
     }
   </style>
 </head>
