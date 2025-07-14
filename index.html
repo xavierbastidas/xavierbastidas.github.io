@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jonathan Xavier Bastidas Chisag | Ingeniero en TI</title>
+  <title>Jonathan Xavier Bastidas Chisag | IT Engineer</title>
   <style>
     body {
       margin: 0;
@@ -11,71 +11,135 @@
       background: #0f172a;
       color: #f8fafc;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
+
     header {
       background: #1e293b;
       padding: 2rem;
       text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
     }
+
     header h1 {
       margin: 0;
       color: #38bdf8;
+      font-size: 2rem;
+      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #38bdf8;
+      width: 100%;
+      max-width: 100%;
     }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent; }
+      50% { border-color: #38bdf8; }
+    }
+
     header p {
       margin: 0.5rem 0 0;
       font-size: 1.1rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2.5s;
     }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
     }
+
+    section:nth-of-type(2) { animation-delay: 0.5s; }
+    section:nth-of-type(3) { animation-delay: 1s; }
+    section:nth-of-type(4) { animation-delay: 1.5s; }
+    section:nth-of-type(5) { animation-delay: 2s; }
+
     h2 {
       color: #22d3ee;
       border-bottom: 1px solid #334155;
       padding-bottom: 0.3rem;
     }
+
     ul {
       padding-left: 1rem;
     }
+
     li {
       margin: 0.5rem 0;
     }
+
     a {
       color: #60a5fa;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
+
     a:hover {
       color: #ffffff;
     }
+
     footer {
       text-align: center;
       margin: 3rem 0 1rem;
       font-size: 0.9rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2.5s;
     }
+
     .tech-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 1rem;
     }
+
     .tech-grid span {
       background: #1e293b;
       padding: 6px 12px;
       border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: default;
+    }
+
+    .tech-grid span:hover {
+      background: #334155;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hi, I'm Xavier Bastidas 👋</h1>
-    <p>Ingeniero en Tecnologías de la Información | Fullstack Developer</p>
+    <h1>Hi, I'm Jonathan Xavier Bastidas Chisag 👋</h1>
+    <p>Information Technology Engineer | Fullstack Developer</p>
     <p>Python • FastAPI • .NET • Angular • React Native</p>
   </header>
 
   <section>
     <h2>🧠 About Me</h2>
-    <p>I’m an enthusiastic engineer passionate about building software solutions. I focus on backend and frontend development, creating scalable APIs and modern interfaces. I'm constantly learning and growing as a Fullstack Developer.</p>
+    <p>I’m an enthusiastic engineer passionate about building software solutions. I specialize in backend and frontend development, creating scalable APIs and modern interfaces. I'm always learning and growing as a Fullstack Developer.</p>
   </section>
 
   <section>
@@ -114,7 +178,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Xavier Bastidas
+    &copy; 2025 Jonathan Xavier Bastidas Chisag
   </footer>
 
 </body>
