@@ -2,66 +2,124 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jonathan Bastidas | Ingeniero en TI</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Jonathan Bastidas | Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <img src="https://avatars.githubusercontent.com/u/87240787?s=96&v=4" alt="Jonathan Bastidas" class="profile-img">
-    <h1>Hola, soy Jonathan Bastidas 👋</h1>
-    <p>Ingeniero en Tecnologías de la Información | Desarrollador Fullstack</p>
-    <p>Python • FastAPI • .NET • Angular • React Native</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#top" class="logo">JB</a>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero-split">
+
+    <div class="hero-side left">
+      <h2>designer</h2>
+      <p>
+        Diseño soluciones elegantes, interfaces limpias y experiencias
+        centradas en el usuario.
+      </p>
+    </div>
+
+    <div class="hero-center">
+      <div class="avatar-glow">
+        <img src="https://avatars.githubusercontent.com/u/87240787?v=4" alt="Jonathan Bastidas">
+      </div>
+      <span class="subtitle">Jonathan Bastidas · Software Developer</span>
+    </div>
+
+    <div class="hero-side right coder">
+      <h2>coder</h2>
+      <pre><code>
+<span class="kw">public class</span> <span class="cl">CleanArchitecture</span>
+{
+    <span class="kw">public void</span> <span class="fn">Build</span>()
+    {
+        <span class="st">Domain</span>();
+        <span class="st">Application</span>();
+        <span class="st">Infrastructure</span>();
+        <span class="st">DeliverValue</span>();
+    }
+}
+      </code></pre>
+    </div>
+
   </header>
 
-  <section>
-    <h2>💡 Sobre mí</h2>
+  <section id="about" class="section">
+    <h2>Sobre mí</h2>
     <p>
-      ¡Hola! Soy Jonathan Bastidas, Ingeniero en Tecnologías de la Información de 25 años . Mi pasión por la tecnología comenzó con la curiosidad y evolucionó hacia el deseo de crear soluciones reales a través del software. Me especializo en desarrollo fullstack — construyendo tanto interfaces intuitivas como potentes sistemas backend — con experiencia en Python, FastAPI, .NET, Angular y React Native. Disfruto aprender, resolver problemas y convertir ideas en aplicaciones significativas que generen impacto.
+      Ingeniero en Tecnologías de la Información.Mi curiosidad por cómo funcionan las cosas me llevó a la tecnología,
+       pero lo que realmente me apasiona es crear soluciones que mejoren la vida de las personas. 
+       Me encanta enfrentar retos, aprender cosas nuevas y convertir ideas en proyectos que tengan un propósito real. 
+      Disfruto del proceso de transformar conceptos en experiencias que marquen la diferencia.
     </p>
   </section>
 
-  <section>
-    <h2>🛠️ Tecnologías y Herramientas</h2>
-    <div class="tech-grid">
-      <span>Python</span>
-      <span>FastAPI</span>
-      <span>.NET</span>
-      <span>Java</span>
-      <span>Node.js</span>
-      <span>Angular</span>
-      <span>React Native</span>
-      <span>JavaScript</span>
-      <span>SQL Server</span>
-      <span>MySQL</span>
-      <span>MongoDB</span>
-      <span>Docker</span>
-      <span>Git</span>
+  <section id="skills" class="section alt">
+    <h2>Stack Tecnológico</h2>
+    <div class="skills">
+      <span>.NET</span><span>FastAPI</span><span>Node.js</span>
+      <span>Angular</span><span>React Native</span>
+      <span>SQL Server</span><span>MySQL</span><span>MongoDB</span>
+      <span>Docker</span><span>Git</span>
+      <span>Clean Architecture</span><span>Microservices</span>
     </div>
   </section>
 
-  <section>
-    <h2>🚀 Proyectos</h2>
-    <ul>
-      <li><a href="https://cloud.chibuleo.com/sistemagd/login" target="_blank">📂 Sistema de Gestión Documental Chibuleo</a> – Un sistema robusto diseñado para organizar, almacenar y proteger registros digitales de manera eficiente.</li>
-      <li><a href="https://github.com/xavierbastidas/SignerDesktopApp" target="_blank">📘 SignaGB</a> – Aplicación de escritorio segura para la firma digital de documentos.</li>
-      <li><a href="https://github.com/xavierbastidas/SalesSystem" target="_blank">📊 Sistema de Ventas</a> – Sistema de gestión de ventas fullstack desarrollado con Angular y Node.js.</li>
-    </ul>
+  <section id="projects" class="section">
+    <h2>Proyectos</h2>
+    <div class="projects">
+
+      <article class="project">
+        <h3>Sistema de Gestión Documental</h3>
+        <p>Plataforma segura para gestión y firma de documentos con trazabilidad.</p>
+        <small>.NET · Arquitectura limpia · Seguridad</small>
+        <a href="https://cloud.chibuleo.com/sistemagd/login" target="_blank">Ver proyecto →</a>
+      </article>
+
+      <article class="project">
+        <h3>SignaGB</h3>
+        <p>Firma digital PDF con enfoque normativo y escalabilidad.</p>
+        <small>.NET · Criptografía · Firma Digital</small>
+        <a href="https://github.com/xavierbastidas/SignerDesktopApp" target="_blank">Repositorio →</a>
+      </article>
+
+      <article class="project">
+        <h3>Sistema de Ventas</h3>
+        <p>SPA para gestión de ventas con backend desacoplado.</p>
+        <small>Angular · Node.js · REST API</small>
+        <a href="https://github.com/xavierbastidas/SalesSystem" target="_blank">Repositorio →</a>
+      </article>
+
+    </div>
   </section>
 
-  <section>
-    <h2>📫 Conecta conmigo</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/xavierbastidas/" target="_blank">LinkedIn</a> |
+  <section id="contact" class="section alt">
+    <h2>Contacto</h2>
+    <div class="contact">
+      <a href="mailto:bastidasjonathan140148@gmail.com">Email</a>
+      <a href="https://wa.me/593987612531" target="_blank">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/xavierbastidas/" target="_blank">LinkedIn</a>
       <a href="https://github.com/xavierbastidas" target="_blank">GitHub</a>
-    </p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Jonathan Bastidas
+    © 2026 · Jonathan Bastidas — Software Developer
   </footer>
-
 </body>
 </html>
