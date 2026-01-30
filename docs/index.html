@@ -2,121 +2,162 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Jonathan Bastidas | Software Developer</title>
+  <title>Jonathan Bastidas | Software Architect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="87240787.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="#top" class="logo">JB</a>
-    <ul>
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#skills">Stack</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
 
-  <!-- HERO -->
-  <header id="top" class="hero-split">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#top" class="logo">Jonathan Bastidas</a>
+  <ul>
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Stack</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
 
-    <div class="hero-side left">
-      <h2>designer</h2>
-      <p>
-        Diseño soluciones elegantes, interfaces limpias y experiencias
-        centradas en el usuario.
-      </p>
+<!-- HERO -->
+<header id="top" class="hero">
+  <span class="eyebrow">Software Architect</span>
+
+  <h1>
+    Diseño <span class="accent">arquitecturas limpias</span><br>
+    y construyo <span id="typing"></span>
+  </h1>
+
+  <p>
+    Ingeniero en Tecnologías de la Información enfocado en crear soluciones
+    escalables, seguras y bien diseñadas.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#projects" class="btn primary">Ver proyectos</a>
+    <a href="#contact" class="btn ghost">Contactar</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2>Sobre mí</h2>
+  <p>
+    Me especializo en desarrollo fullstack y arquitectura de software.
+    Disfruto transformar ideas complejas en sistemas claros,
+    mantenibles y alineados al negocio.
+    Mi interés por la tecnología nace de la curiosidad por entender cómo
+    funcionan los sistemas y cómo diseñarlos para que sean útiles,
+    seguros y escalables en el tiempo.
+  </p>
+</section>
+
+<!-- STACK -->
+<section id="skills" class="section alt reveal">
+  <h2>Stack Tecnológico</h2>
+
+  <div class="stack-grid animated-stack">
+    <div class="stack-card">
+      <div class="stack-icon backend"></div>
+      <h4>Backend</h4>
+      <p>.NET · FastAPI · Node.js</p>
     </div>
 
-    <div class="hero-center">
-      <div class="avatar-glow">
-        <img src="https://avatars.githubusercontent.com/u/87240787?v=4" alt="Jonathan Bastidas">
-      </div>
-      <span class="subtitle">Jonathan Bastidas · Software Developer</span>
+    <div class="stack-card">
+      <div class="stack-icon frontend"></div>
+      <h4>Frontend</h4>
+      <p>Angular · React Native</p>
     </div>
 
-    <div class="hero-side right coder">
-      <h2>coder</h2>
-      <pre><code>
-<span class="kw">public class</span> <span class="cl">CleanArchitecture</span>
-{
-    <span class="kw">public void</span> <span class="fn">Build</span>()
-    {
-        <span class="st">Domain</span>();
-        <span class="st">Application</span>();
-        <span class="st">Infrastructure</span>();
-        <span class="st">DeliverValue</span>();
-    }
-}
-      </code></pre>
+    <div class="stack-card">
+      <div class="stack-icon database"></div>
+      <h4>Databases</h4>
+      <p>SQL Server · MySQL</p>
     </div>
 
-  </header>
-
-  <section id="about" class="section">
-    <h2>Sobre mí</h2>
-    <p>
-      Ingeniero en Tecnologías de la Información.Mi curiosidad por cómo funcionan las cosas me llevó a la tecnología,
-       pero lo que realmente me apasiona es crear soluciones que mejoren la vida de las personas. 
-       Me encanta enfrentar retos, aprender cosas nuevas y convertir ideas en proyectos que tengan un propósito real. 
-      Disfruto del proceso de transformar conceptos en experiencias que marquen la diferencia.
-    </p>
-  </section>
-
-  <section id="skills" class="section alt">
-    <h2>Stack Tecnológico</h2>
-    <div class="skills">
-      <span>.NET</span><span>FastAPI</span><span>Node.js</span>
-      <span>Angular</span><span>React Native</span>
-      <span>SQL Server</span><span>MySQL</span><span>MongoDB</span>
-      <span>Docker</span><span>Git</span>
-      <span>Clean Architecture</span><span>Microservices</span>
+    <div class="stack-card">
+      <div class="stack-icon devops"></div>
+      <h4>DevOps</h4>
+      <p>Docker · Git · CI/CD</p>
     </div>
-  </section>
 
-  <section id="projects" class="section">
-    <h2>Proyectos</h2>
-    <div class="projects">
-
-      <article class="project">
-        <h3>Sistema de Gestión Documental</h3>
-        <p>Plataforma segura para gestión y firma de documentos con trazabilidad.</p>
-        <small>.NET · Arquitectura limpia · Seguridad</small>
-        <a href="https://cloud.chibuleo.com/sistemagd/login" target="_blank">Ver proyecto →</a>
-      </article>
-
-      <article class="project">
-        <h3>SignaGB</h3>
-        <p>Firma digital PDF con enfoque normativo y escalabilidad.</p>
-        <small>.NET · Criptografía · Firma Digital</small>
-        <a href="https://github.com/xavierbastidas/SignerDesktopApp" target="_blank">Repositorio →</a>
-      </article>
-
-      <article class="project">
-        <h3>Sistema de Ventas</h3>
-        <p>SPA para gestión de ventas con backend desacoplado.</p>
-        <small>Angular · Node.js · REST API</small>
-        <a href="https://github.com/xavierbastidas/SalesSystem" target="_blank">Repositorio →</a>
-      </article>
-
+    <div class="stack-card">
+      <div class="stack-icon architecture"></div>
+      <h4>Architecture</h4>
+      <p>Clean Architecture · Microservices</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="section alt">
-    <h2>Contacto</h2>
-    <div class="contact">
-      <a href="mailto:bastidasjonathan140148@gmail.com">Email</a>
-      <a href="https://wa.me/593987612531" target="_blank">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/xavierbastidas/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/xavierbastidas" target="_blank">GitHub</a>
-    </div>
-  </section>
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <h2>Proyectos</h2>
 
-  <footer>
-    © 2026 · Jonathan Bastidas — Software Developer
-  </footer>
+  <div class="projects">
+    <article class="card">
+      <h3>Gestión Documental</h3>
+      <p>Sistema de firma digital y trazabilidad documental.</p>
+      <small>.NET · Seguridad · Arquitectura Limpia</small>
+      <a href="https://cloud.chibuleo.com/sistemagd/login" target="_blank">Ver →</a>
+    </article>
+
+    <article class="card">
+      <h3>SignaGB</h3>
+      <p>Firma digital PDF normativa y escalable.</p>
+      <small>.NET · Criptografía</small>
+      <a href="https://github.com/xavierbastidas/SignerDesktopApp" target="_blank">Repo →</a>
+    </article>
+
+    <article class="card">
+      <h3>Sistema de Ventas</h3>
+      <p>SPA moderna con backend desacoplado.</p>
+      <small>Angular · Node.js</small>
+      <a href="https://github.com/xavierbastidas/SalesSystem" target="_blank">Repo →</a>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <h2>Contacto</h2>
+
+  <div class="contact-list">
+    <a href="mailto:bastidasjonathan140148@gmail.com">
+      <i class="fa-solid fa-envelope"></i>
+      bastidasjonathan140148@gmail.com
+    </a>
+
+    <a href="https://wa.me/593987612531" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      WhatsApp
+    </a>
+
+    <a href="https://www.linkedin.com/in/xavierbastidas/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/xavierbastidas" target="_blank">
+      <i class="fa-brands fa-github"></i>
+      GitHub
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 · Jonathan Bastidas — Software Architect
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
